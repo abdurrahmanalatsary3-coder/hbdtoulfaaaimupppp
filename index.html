@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Beautiful Soul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Decorations -->
+  <div class="floating-layer" id="floatingLayer" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-brand">✦ For You</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#message">Message</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <button class="music-btn" id="musicBtn" title="Play music">
+      <span class="music-icon" id="musicIcon">♪</span>
+      <span class="music-label">Music</span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <!-- SVG Botanical Top Left -->
+    <div class="botanical botanical-top-left" aria-hidden="true">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.55">
+          <ellipse cx="60" cy="140" rx="35" ry="18" fill="#6b8c6e" transform="rotate(-40 60 140)"/>
+          <ellipse cx="90" cy="110" rx="30" ry="14" fill="#8aad8e" transform="rotate(-25 90 110)"/>
+          <ellipse cx="50" cy="100" rx="28" ry="12" fill="#7a9e7e" transform="rotate(-55 50 100)"/>
+          <ellipse cx="115" cy="90" rx="26" ry="11" fill="#a4bfa0" transform="rotate(-15 115 90)"/>
+          <ellipse cx="70" cy="70" rx="22" ry="10" fill="#6b8c6e" transform="rotate(-45 70 70)"/>
+          <line x1="80" y1="180" x2="80" y2="60" stroke="#5a7a5c" stroke-width="2.5" opacity="0.7"/>
+          <line x1="80" y1="130" x2="50" y2="110" stroke="#5a7a5c" stroke-width="1.5" opacity="0.6"/>
+          <line x1="80" y1="110" x2="110" y2="85" stroke="#5a7a5c" stroke-width="1.5" opacity="0.6"/>
+          <line x1="80" y1="90" x2="55" y2="68" stroke="#5a7a5c" stroke-width="1.2" opacity="0.5"/>
+          <!-- small flower -->
+          <circle cx="130" cy="60" r="6" fill="#c8deb0" opacity="0.8"/>
+          <circle cx="118" cy="52" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="142" cy="52" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="118" cy="68" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="142" cy="68" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="130" cy="60" r="3" fill="#f0ede4"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- SVG Botanical Top Right -->
+    <div class="botanical botanical-top-right" aria-hidden="true">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.55" transform="scale(-1,1) translate(-200,0)">
+          <ellipse cx="60" cy="140" rx="35" ry="18" fill="#6b8c6e" transform="rotate(-40 60 140)"/>
+          <ellipse cx="90" cy="110" rx="30" ry="14" fill="#8aad8e" transform="rotate(-25 90 110)"/>
+          <ellipse cx="50" cy="100" rx="28" ry="12" fill="#7a9e7e" transform="rotate(-55 50 100)"/>
+          <ellipse cx="115" cy="90" rx="26" ry="11" fill="#a4bfa0" transform="rotate(-15 115 90)"/>
+          <ellipse cx="70" cy="70" rx="22" ry="10" fill="#6b8c6e" transform="rotate(-45 70 70)"/>
+          <line x1="80" y1="180" x2="80" y2="60" stroke="#5a7a5c" stroke-width="2.5" opacity="0.7"/>
+          <line x1="80" y1="130" x2="50" y2="110" stroke="#5a7a5c" stroke-width="1.5" opacity="0.6"/>
+          <line x1="80" y1="110" x2="110" y2="85" stroke="#5a7a5c" stroke-width="1.5" opacity="0.6"/>
+          <line x1="80" y1="90" x2="55" y2="68" stroke="#5a7a5c" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="130" cy="60" r="6" fill="#c8deb0" opacity="0.8"/>
+          <circle cx="118" cy="52" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="142" cy="52" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="118" cy="68" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="142" cy="68" r="4.5" fill="#c8deb0" opacity="0.7"/>
+          <circle cx="130" cy="60" r="3" fill="#f0ede4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-in delay-1">— With love, for you —</p>
+      <h1 class="hero-title fade-in delay-2">
+        Happy Birthday,<br />
+        <em>Beautiful Soul</em>
+      </h1>
+      <div class="hero-name fade-in delay-3">
+        <span class="name-text">Ulfaa</span>
+      </div>
+      <p class="hero-subtitle fade-in delay-4">
+        Today is all about you. May your days always bloom with happiness,<br class="break-desktop" />
+        love, and beautiful moments.
+      </p>
+      <div class="hero-ornament fade-in delay-5" aria-hidden="true">✦ ✦ ✦</div>
+      <div class="hero-actions fade-in delay-5">
+        <button class="btn-surprise" id="surpriseBtn">
+          <span class="btn-icon">✉</span>
+          Open Your Birthday Surprise
+        </button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator fade-in delay-5" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Birthday Message Section -->
+  <section class="message-section" id="message">
+    <div class="section-header fade-in-up">
+      <span class="section-label">A note from the heart</span>
+      <h2 class="section-title">For You, On This Special Day</h2>
+    </div>
+
+    <div class="message-card fade-in-up delay-2">
+      <div class="card-corner card-corner-tl" aria-hidden="true"></div>
+      <div class="card-corner card-corner-tr" aria-hidden="true"></div>
+      <div class="card-corner card-corner-bl" aria-hidden="true"></div>
+      <div class="card-corner card-corner-br" aria-hidden="true"></div>
+      <div class="message-flower-left" aria-hidden="true">
+        <svg viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg" width="70">
+          <g opacity="0.5">
+            <ellipse cx="30" cy="100" rx="22" ry="10" fill="#8aad8e" transform="rotate(-50 30 100)"/>
+            <ellipse cx="50" cy="80" rx="18" ry="8" fill="#7a9e7e" transform="rotate(-30 50 80)"/>
+            <ellipse cx="22" cy="70" rx="16" ry="7" fill="#a4bfa0" transform="rotate(-60 22 70)"/>
+            <line x1="40" y1="140" x2="40" y2="50" stroke="#5a7a5c" stroke-width="2" opacity="0.7"/>
+            <circle cx="40" cy="42" r="5" fill="#d4b896" opacity="0.9"/>
+            <circle cx="30" cy="34" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="50" cy="34" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="30" cy="50" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="50" cy="50" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="40" cy="42" r="2.5" fill="#f7f0e6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="message-flower-right" aria-hidden="true">
+        <svg viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg" width="70">
+          <g opacity="0.5" transform="scale(-1,1) translate(-80,0)">
+            <ellipse cx="30" cy="100" rx="22" ry="10" fill="#8aad8e" transform="rotate(-50 30 100)"/>
+            <ellipse cx="50" cy="80" rx="18" ry="8" fill="#7a9e7e" transform="rotate(-30 50 80)"/>
+            <ellipse cx="22" cy="70" rx="16" ry="7" fill="#a4bfa0" transform="rotate(-60 22 70)"/>
+            <line x1="40" y1="140" x2="40" y2="50" stroke="#5a7a5c" stroke-width="2" opacity="0.7"/>
+            <circle cx="40" cy="42" r="5" fill="#d4b896" opacity="0.9"/>
+            <circle cx="30" cy="34" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="50" cy="34" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="30" cy="50" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="50" cy="50" r="4" fill="#d4b896" opacity="0.8"/>
+            <circle cx="40" cy="42" r="2.5" fill="#f7f0e6"/>
+          </g>
+        </svg>
+      </div>
+      <p class="message-quote-mark" aria-hidden="true">"</p>
+      <p class="message-text">
+        Di hari spesial ini, aku berharap semoga setiap langkahmu selalu dipenuhi kebahagiaan.
+        Semoga hal-hal baik senantiasa menemukan jalannya menuju hidupmu.
+        Tetaplah menjadi seseorang yang istimewa dengan segala keindahan yang ada dalam dirimu.
+      </p>
+      <div class="message-signature">— With all my heart</div>
+    </div>
+
+    <div class="wishes-row">
+      <div class="wish-card fade-in-up delay-1">
+        <div class="wish-icon">✦</div>
+        <h3>Joy</h3>
+        <p>May every morning bring you something worth smiling about.</p>
+      </div>
+      <div class="wish-card fade-in-up delay-2">
+        <div class="wish-icon">❀</div>
+        <h3>Love</h3>
+        <p>May you always be surrounded by warmth and genuine affection.</p>
+      </div>
+      <div class="wish-card fade-in-up delay-3">
+        <div class="wish-icon">✧</div>
+        <h3>Bloom</h3>
+        <p>May your life flourish like a garden in full spring bloom.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header fade-in-up">
+      <span class="section-label">Memories</span>
+      <h2 class="section-title">Little Moments, Forever Dear</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="polaroid fade-in-up delay-1">
+        <div class="polaroid-frame">
+          <div class="polaroid-img">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="60" opacity="0.4">
+                <circle cx="60" cy="45" r="22" fill="none" stroke="#6b8c6e" stroke-width="2"/>
+                <line x1="20" y1="90" x2="100" y2="90" stroke="#6b8c6e" stroke-width="2"/>
+                <ellipse cx="45" cy="82" rx="10" ry="4" fill="#8aad8e" opacity="0.5"/>
+                <ellipse cx="75" cy="78" rx="12" ry="5" fill="#8aad8e" opacity="0.5"/>
+                <circle cx="60" cy="45" r="10" fill="#8aad8e" opacity="0.3"/>
+              </svg>
+              <span>Add Your Photo</span>
+            </div>
+          </div>
+        </div>
+        <p class="polaroid-caption">A beautiful day ✦</p>
+      </div>
+
+      <div class="polaroid polaroid-tall fade-in-up delay-2">
+        <div class="polaroid-frame">
+          <div class="polaroid-img">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="60" opacity="0.4">
+                <rect x="30" y="20" width="60" height="80" rx="4" fill="none" stroke="#6b8c6e" stroke-width="2"/>
+                <circle cx="60" cy="50" r="18" fill="#8aad8e" opacity="0.3"/>
+                <ellipse cx="60" cy="90" rx="20" ry="8" fill="#8aad8e" opacity="0.2"/>
+              </svg>
+              <span>Add Your Photo</span>
+            </div>
+          </div>
+        </div>
+        <p class="polaroid-caption">Golden memory ✦</p>
+      </div>
+
+      <div class="polaroid fade-in-up delay-3">
+        <div class="polaroid-frame">
+          <div class="polaroid-img">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="60" opacity="0.4">
+                <path d="M60 30 Q75 15 90 30 Q105 45 90 60 Q75 75 60 90 Q45 75 30 60 Q15 45 30 30 Q45 15 60 30Z" fill="#8aad8e" opacity="0.3" stroke="#6b8c6e" stroke-width="1.5"/>
+              </svg>
+              <span>Add Your Photo</span>
+            </div>
+          </div>
+        </div>
+        <p class="polaroid-caption">My favourite smile ✦</p>
+      </div>
+
+      <div class="polaroid polaroid-rotate fade-in-up delay-2">
+        <div class="polaroid-frame">
+          <div class="polaroid-img">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" width="60" opacity="0.4">
+                <circle cx="40" cy="55" r="15" fill="#8aad8e" opacity="0.3" stroke="#6b8c6e" stroke-width="1.5"/>
+                <circle cx="80" cy="45" r="20" fill="#a4bfa0" opacity="0.3" stroke="#6b8c6e" stroke-width="1.5"/>
+                <circle cx="60" cy="75" r="12" fill="#8aad8e" opacity="0.3" stroke="#6b8c6e" stroke-width="1.5"/>
+              </svg>
+              <span>Add Your Photo</span>
+            </div>
+          </div>
+        </div>
+        <p class="polaroid-caption">Always you ✦</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Section -->
+  <section class="final-section" id="final">
+    <div class="final-botanical-left" aria-hidden="true">
+      <svg viewBox="0 0 180 300" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.45">
+          <line x1="90" y1="300" x2="90" y2="80" stroke="#5a7a5c" stroke-width="3" opacity="0.7"/>
+          <ellipse cx="55" cy="200" rx="40" ry="17" fill="#6b8c6e" transform="rotate(-45 55 200)"/>
+          <ellipse cx="130" cy="170" rx="36" ry="15" fill="#8aad8e" transform="rotate(-20 130 170)"/>
+          <ellipse cx="45" cy="150" rx="32" ry="14" fill="#7a9e7e" transform="rotate(-60 45 150)"/>
+          <ellipse cx="135" cy="125" rx="28" ry="12" fill="#a4bfa0" transform="rotate(-15 135 125)"/>
+          <ellipse cx="60" cy="110" rx="25" ry="11" fill="#6b8c6e" transform="rotate(-50 60 110)"/>
+          <!-- flowers -->
+          <circle cx="90" cy="72" r="10" fill="#d4b896" opacity="0.8"/>
+          <circle cx="72" cy="58" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="108" cy="58" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="72" cy="86" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="108" cy="86" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="90" cy="72" r="5" fill="#f7f0e6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="final-botanical-right" aria-hidden="true">
+      <svg viewBox="0 0 180 300" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.45" transform="scale(-1,1) translate(-180,0)">
+          <line x1="90" y1="300" x2="90" y2="80" stroke="#5a7a5c" stroke-width="3" opacity="0.7"/>
+          <ellipse cx="55" cy="200" rx="40" ry="17" fill="#6b8c6e" transform="rotate(-45 55 200)"/>
+          <ellipse cx="130" cy="170" rx="36" ry="15" fill="#8aad8e" transform="rotate(-20 130 170)"/>
+          <ellipse cx="45" cy="150" rx="32" ry="14" fill="#7a9e7e" transform="rotate(-60 45 150)"/>
+          <ellipse cx="135" cy="125" rx="28" ry="12" fill="#a4bfa0" transform="rotate(-15 135 125)"/>
+          <ellipse cx="60" cy="110" rx="25" ry="11" fill="#6b8c6e" transform="rotate(-50 60 110)"/>
+          <circle cx="90" cy="72" r="10" fill="#d4b896" opacity="0.8"/>
+          <circle cx="72" cy="58" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="108" cy="58" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="72" cy="86" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="108" cy="86" r="8" fill="#c8b8a2" opacity="0.75"/>
+          <circle cx="90" cy="72" r="5" fill="#f7f0e6"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="final-content fade-in-up">
+      <div class="final-sparkle" aria-hidden="true" id="finalSparkle"></div>
+      <p class="final-eyebrow">— Always and forever —</p>
+      <h2 class="final-title">
+        May your life always bloom<br />
+        as beautifully as the flowers in spring.
+      </h2>
+      <p class="final-sub">Happy Birthday.</p>
+      <div class="final-ornament" aria-hidden="true">✦ ✦ ✦</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with love &amp; sincerity, just for you. ✦</p>
+  </footer>
+
+  <!-- Surprise Modal -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Birthday Surprise">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="envelope-container" id="envelopeContainer">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap" id="envelopeFlap"></div>
+          <div class="envelope-body">
+            <div class="envelope-seal">✦</div>
+          </div>
+        </div>
+        <p class="envelope-hint">Click to open</p>
+      </div>
+      <div class="surprise-letter" id="surpriseLetter">
+        <div class="letter-header">
+          <div class="letter-flowers" aria-hidden="true">❀ ✦ ❀</div>
+          <h3>A little secret just for you</h3>
+        </div>
+        <p class="letter-body">
+          Kamu mungkin tidak selalu menyadarinya, tapi kehadiranmu membuat banyak hal terasa lebih indah.
+          Caramu tertawa, caramu peduli, cara kamu ada — semuanya adalah hal-hal yang membuat hidupmu berarti bagi orang-orang di sekitarmu.
+        </p>
+        <p class="letter-body">
+          Di hari ulang tahunmu ini, semoga kamu tahu betapa berharganya dirimu.
+          Tetaplah bersinar, tetaplah menjadi dirimu — karena kamu sudah lebih dari cukup.
+        </p>
+        <div class="letter-signature">With love ✦</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <audio id="bgMusic" loop>
+    <!-- Background music placeholder - replace src with actual audio file path -->
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
